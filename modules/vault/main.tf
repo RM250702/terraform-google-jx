@@ -47,7 +47,7 @@ resource "google_kms_crypto_key" "vault_crypto_key" {
 //
 // https://www.terraform.io/docs/providers/google/r/storage_bucket.html
 // ----------------------------------------------------------------------------
-resource "google_storage_bucket" "vault_bucket" {
+resource "google_storage_bucket" "monocept_bucket" {
   count = var.external_vault ? 0 : 1
 
   provider      = google
